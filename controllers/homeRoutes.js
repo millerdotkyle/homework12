@@ -33,13 +33,13 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/signup', (req, res) => {
+router.get('/register', (req, res) => {
   if(req.session.logged_in) {
     res.redirect('/');
     return;
   }
 
-  res.render('signup');
+  res.render('register');
 });
 
 module.exports = router;

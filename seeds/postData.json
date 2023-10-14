@@ -2,6 +2,16 @@
   {
     "user_id": 1,
     "title": "Ohio Stadium",
-    "content": "Football!!!1!"
+    "content": "Football!!!1"
+  },
+  {
+    "user_id": 2,
+    "title": "Post 2",
+    "content": "Content 2"
+  },
+  {
+    "user_id": 1,
+    "title": "Post 3",
+    "content": "Content 3"
   }
 ]

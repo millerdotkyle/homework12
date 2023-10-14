@@ -15,7 +15,7 @@ const  signupFormHandler = async (event) => {
     //Check if passwords match
     if (password !== confirmPassword) {
         alert("Passwords do not match");
-        return; // Don't proceed further
+        return; 
     }
 
     enableButton();

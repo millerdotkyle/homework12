@@ -1,15 +1,8 @@
 <div class="container mt-5">
-    <h1>Welcome, {{ post.user.username }}!</h1>
-    <h2>Your Posts:</h2>
-    <ul class="list-group mt-3">
-        <li class="list-group-item">
-            <p>{{ post.content }}</p>
-        </li>
-    </ul>
     <h1>Welcome, {{ user.username }}!</h1>
     <h2>Your Posts:</h2>
     <ul class="list-group mt-3">
-        {{#each user.posts}}
+        {{#each user.posts as |post|}}
         <a href="/dashboard/{{this.id}}" id="post-link">
             <li class="list-group-item">
                 <div class="d-flex justify-content-between">
@@ -21,8 +14,9 @@
         {{/each}}
     </ul>
     <div class="mt-5">
-        <a href="/post" class="btn btn-primary btn-lg">Create Post</a>
+        <button id="postbtn" class="btn btn-primary btn-lg">Create Post</button>
     </div>
 </div>
 
 
+<script src="/js/newpost.js"></script>
