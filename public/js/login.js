@@ -26,9 +26,3 @@ const loginFormHandler = async (event) => {
 };
 
 document.querySelector('#loginForm').addEventListener('submit', loginFormHandler);
-
-// Make sure the DOM is fully loaded before adding the event listener
-// document.addEventListener('DOMContentLoaded', () => {
-//         document.querySelector('#inputEmail').value = '';
-//         document.querySelector('#inputPassword').value = '';
-// });

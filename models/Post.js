@@ -19,10 +19,6 @@ Post.init(
                 key: 'id',
             },
         },
-        place_id: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         title: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -31,15 +27,6 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        image: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        upvote: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            defaultValue: 0,
-        }
     },
     {
         sequelize,
